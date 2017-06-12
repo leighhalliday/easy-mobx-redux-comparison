@@ -18,7 +18,7 @@ export default class App extends React.Component {
 
   // componentWillMount is part of the component life cycle and basically it's like saying... do this before the app renders. In this case, call the fetchImages function so that they show up once the app renders.
   componentWillMount() {
-    this.fetchImages('butterfly');
+    this.fetchImages('cat');
   }
 
   // I'm going to fetch images from unsplash. Note that in the url I am embedding 'term' which will be based on the user's input.
