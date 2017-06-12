@@ -10,9 +10,10 @@ export default class App extends React.Component {
 
     // The state is the dynamic data of your app. Think what parts of your site are going to be changing (because of an event or interaction, etc.), those particular elements should be given an initial value.
     this.state = {
-      images: [],
       // This initial term will be updated with the search term the user inputs
-      term: ''
+      term: '',
+      // The images array will be filled with images coming from unsplash
+      images: []
     }
   }
 
@@ -23,7 +24,7 @@ export default class App extends React.Component {
 
   // I'm going to fetch images from unsplash. Note that in the url I am embedding 'term' which will be based on the user's input.
   fetchImages = (term) => {
-    // The first thing is setting the term in the state to whatever the user input is
+    // The first thing is setting the term in the state to whatever the user input is. For that, we use the this.setState function which receives an object.
     this.setState({
       term: term
     })

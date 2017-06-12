@@ -4,8 +4,11 @@
   "private": true,
   "dependencies": {
     "concurrently": "^3.4.0",
+    "enzyme": "^2.8.2",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-addons-test-utils": "^15.5.1",
+    "react-dom": "^15.5.4",
+    "sinon": "^2.3.4"
   },
   "devDependencies": {
     "react-scripts": "1.0.7"

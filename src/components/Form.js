@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// Form needs to get the term that the user entered and then call the fetchImages function (from App component) on submit. So, that is the information received as props.
+// Form needs to receive the term that the user entered and then call the fetchImages function (from App component) on submit. So, that is the information received as props.
 export default class Form extends React.Component {
   static propTypes = {
     term: PropTypes.string.isRequired,
