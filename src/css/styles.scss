@@ -2,7 +2,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Pontano Sans', sans-serif;
+  font-family: "Pontano Sans", sans-serif;
 }
 
 .images-container {
@@ -15,17 +15,17 @@ body {
 }
 
 .image {
-  background-color: #FDFFFC;
+  background-color: #fdfffc;
   box-sizing: border-box;
   width: calc(33.33% - 20px);
   margin: 10px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 
-  @media(max-width: 1096px) {
+  @media (max-width: 1096px) {
     width: calc(50% - 20px);
   }
 
-  @media(max-width: 720px) {
+  @media (max-width: 720px) {
     width: 90%;
   }
 }
@@ -44,7 +44,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0,48,63, 0.5);
+  background-color: rgba(0, 48, 63, 0.5);
   opacity: 0;
   transition: opacity 1s ease;
 
@@ -54,7 +54,7 @@ body {
 }
 
 .overlay-text {
-  color: #FFF;
+  color: #fff;
 }
 
 img {
@@ -81,15 +81,17 @@ header {
 
 h2 {
   font-size: 1.2rem;
-  color: #0B90AA;
+  color: #0b90aa;
 }
 
-a, button, input {
+a,
+button,
+input {
   display: inline-block;
-  background-color: #FC6453;
+  background-color: #fc6453;
   padding: 12px;
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
   font-size: 1rem;
   border: none;
   transition: background-color 1s ease;
@@ -110,19 +112,19 @@ form {
 }
 
 input {
-  background-color: #FC6453;
+  background-color: #fc6453;
   width: 300px;
 
   &:focus {
     outline: none;
-    background-color: #DCAE1D;
+    background-color: #dcae1d;
   }
 
   &:hover {
-    background-color: #DCAE1D;
+    background-color: #dcae1d;
   }
 
-  @media(max-width: 720px) {
+  @media (max-width: 720px) {
     width: 200px;
   }
 }
@@ -132,6 +134,12 @@ button {
   cursor: pointer;
 
   &:hover {
-    background-color: #DCAE1D;
+    background-color: #dcae1d;
   }
+}
+
+h3 {
+  text-align: center;
+  padding: 2rem;
+  font-size: 2rem;
 }

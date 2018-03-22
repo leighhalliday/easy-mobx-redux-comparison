@@ -2,7 +2,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Pontano Sans', sans-serif; }
+  font-family: "Pontano Sans", sans-serif; }
 
 .images-container {
   width: 90vw;
@@ -13,7 +13,7 @@ body {
   margin-bottom: 100px; }
 
 .image {
-  background-color: #FDFFFC;
+  background-color: #fdfffc;
   box-sizing: border-box;
   width: calc(33.33% - 20px);
   margin: 10px;
@@ -45,7 +45,7 @@ body {
     opacity: 1; }
 
 .overlay-text {
-  color: #FFF; }
+  color: #fff; }
 
 img {
   display: block;
@@ -67,18 +67,22 @@ header {
 
 h2 {
   font-size: 1.2rem;
-  color: #0B90AA; }
+  color: #0b90aa; }
 
-a, button, input {
+a,
+button,
+input {
   display: inline-block;
-  background-color: #FC6453;
+  background-color: #fc6453;
   padding: 12px;
   text-decoration: none;
-  color: #FFF;
+  color: #fff;
   font-size: 1rem;
   border: none;
   transition: background-color 1s ease; }
-  a:hover, button:hover, input:hover {
+  a:hover,
+  button:hover,
+  input:hover {
     background-color: #600473; }
 
 form {
@@ -91,13 +95,13 @@ form {
   padding-right: 30px; }
 
 input {
-  background-color: #FC6453;
+  background-color: #fc6453;
   width: 300px; }
   input:focus {
     outline: none;
-    background-color: #DCAE1D; }
+    background-color: #dcae1d; }
   input:hover {
-    background-color: #DCAE1D; }
+    background-color: #dcae1d; }
   @media (max-width: 720px) {
     input {
       width: 200px; } }
@@ -106,6 +110,11 @@ button {
   margin-left: 30px;
   cursor: pointer; }
   button:hover {
-    background-color: #DCAE1D; }
+    background-color: #dcae1d; }
+
+h3 {
+  text-align: center;
+  padding: 2rem;
+  font-size: 2rem; }
 
 /*# sourceMappingURL=styles.css.map */
