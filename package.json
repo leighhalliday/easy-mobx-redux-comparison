@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
     "babel-plugin-styled-components": "^1.5.1",
     "concurrently": "^3.5.1",
     "enzyme": "^3.3.0",
