@@ -1,15 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { fetchImages } from "../actions";
 
-export default class Form extends React.Component {
+class Form extends React.Component {
   static propTypes = {
-    fetchImages: PropTypes.func.isRequired
+    pleaseFetchImages: PropTypes.func.isRequired
   };
 
   onSubmit = e => {
     e.preventDefault();
     const term = this.input.value;
-    this.props.fetchImages(term);
+    this.props.pleaseFetchImages(term);
   };
 
   render() {
@@ -27,3 +29,15 @@ export default class Form extends React.Component {
     );
   }
 }
+
+const mapStateToProps = state => ({});
+
+const mapDispatchToProps = dispatch => {
+  return {
+    pleaseFetchImages: term => {
+      dispatch(fetchImages(term));
+    }
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Form);
