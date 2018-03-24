@@ -1,9 +1,9 @@
-Hi there!
+# MobX and Redux Comparison
 
-This is a simple react app with detailed comments that will help you understand a basic react flow.
+There are 3 branches here:
 
-Follow this steps to work with this repo locally:
+* master (component state)
+* mobx (MobX)
+* redux (Redux)
 
-1. Clone the repo
-2. Run `yarn install`
-3. Run `yarn watch`
+They each implement the same app using different state management solutions. Visit https://www.leighhalliday.com/easy-mobx-redux-comparison to see a video on each of the conversions.
