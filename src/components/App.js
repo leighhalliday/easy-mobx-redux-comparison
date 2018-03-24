@@ -63,9 +63,7 @@ export default class App extends React.Component {
         {status === "error" && <h3>Oops... error!</h3>}
 
         <div className="images-container">
-          {this.state.images.map(image => {
-            return <Image image={image} key={image.id} />;
-          })}
+          {images.map(image => <Image image={image} key={image.id} />)}
         </div>
       </div>
     );
