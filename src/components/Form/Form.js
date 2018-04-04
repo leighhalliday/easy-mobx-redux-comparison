@@ -14,7 +14,7 @@ export default class Form extends React.Component {
 
   render() {
     return (
-      <form className="form" onSubmit={e => this.onSubmit(e)}>
+      <form className="form" onSubmit={this.onSubmit}>
         <input
           type="text"
           ref={input => {
