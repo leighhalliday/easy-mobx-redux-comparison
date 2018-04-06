@@ -10,7 +10,7 @@ export default class App extends React.Component {
     status: "initial"
   };
 
-  componentWillMount() {
+  componentDidMount() {
     this.fetchImages("Mountains");
   }
 
