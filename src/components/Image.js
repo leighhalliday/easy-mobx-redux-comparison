@@ -3,7 +3,21 @@ import PropTypes from "prop-types";
 
 export default class Image extends React.Component {
   static propTypes = {
-    image: PropTypes.object.isRequired
+    image: PropTypes.shape({
+      categories: PropTypes.arrayOf(
+        PropTypes.shape({ title: PropTypes.string })
+      ),
+      user: PropTypes.shape({
+        name: PropTypes.string
+      }),
+      links: PropTypes.shape({
+        html: PropTypes.string
+      }),
+      urls: PropTypes.shape({
+        small: PropTypes.string
+      }),
+      likes: PropTypes.number
+    }).isRequired
   };
 
   render() {

@@ -1,7 +1,7 @@
 import React from "react";
 import Form from "./Form";
 import Image from "./Image";
-import axios from "axios";
+import unsplash from "../services/unsplash";
 
 export default class App extends React.Component {
   state = {
@@ -22,19 +22,10 @@ export default class App extends React.Component {
     });
 
     try {
-      const response = await axios.get(
-        "https://api.unsplash.com/search/photos",
-        {
-          params: {
-            client_id:
-              "4070052047e85343f77f7bbfb056ca4da387e25b3114baff0644247779a29964",
-            query: term
-          }
-        }
-      );
+      const images = await unsplash(term);
       this.setState({
         status: "done",
-        images: response.data.results
+        images
       });
     } catch (error) {
       this.setState({
